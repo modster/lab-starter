@@ -7,8 +7,8 @@ description: Markdown with EZ mode enabled
 # This will be used when the repository is crated for each individual learner
 
 template:
-  name: my-project
-  repo: https://github.com/modster/my-project.git
+  name:     # the name of the repository when it is created for the learner
+  repo:     # the name of the template repository from which to clone for the learner
 
 # `before` block
 # Actions to take place after the learner registers, but before they start interacting with their repo
@@ -24,38 +24,37 @@ before:
 
 steps:
 # Step 1: INTERNAL COMMENT DESCRIBING STEP 
-- title: Pull Request
-  description: Pull Request
-  event: pull_request
+- title: # the title of the step, shown to the learner in the course progress page
+  description: # a description of the step, shown to the learner in the course progress page
+  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
   actions: # a list of the actions that will occur when the step is triggered by an event
   - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 2: INTERNAL COMMENT FOR STEP 2
-- title: push # the title of the step, shown to the learner in the course progress page
+# - title: # the title of the step, shown to the learner in the course progress page
 #  description: # a description of the step, shown to the learner in the course progress page
-  event: push # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 3: INTERNAL COMMENT FOR STEP 3
-- title: status# the title of the step, shown to the learner in the course progress page
+# - title: # the title of the step, shown to the learner in the course progress page
 #  description: # a description of the step, shown to the learner in the course progress page
-  event: status # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 4: INTERNAL COMMENT FOR STEP 4
 # - title: # the title of the step, shown to the learner in the course progress page
 #  description: # a description of the step, shown to the learner in the course progress page
-  event: ping # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
 # Step 5: INTERNAL COMMENT FOR STEP 5
 # - title: # the title of the step, shown to the learner in the course progress page
 #  description: # a description of the step, shown to the learner in the course progress page
-  event: pull_request_review
- # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+#  event: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
 #  actions: # a list of the actions that will occur when the step is triggered by an event
 #  - type: # the type of action, full list at https://lab.github.com/docs/actions
 
